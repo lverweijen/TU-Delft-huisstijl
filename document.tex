@@ -1,15 +1,16 @@
-% MiKTeX (LaTeX) Beamer Presentation template
+% LaTeX Beamer Presentation template
 % Author: Carl Schneider
 % University TUDelft
 % November 2011
 % Simple example (without TOC)
 
+% Modified: Laurent Verweijen
+% December 2013
+
 \documentclass{beamer}
 
 % Necessary definitions:
 \setbeamersize{sidebar width left=0.5cm}
-\usepackage[dutch]{babel}
-\usepackage{tikz}
 \newcommand{\field}[1]{\mathbb{#1}}
 \newcommand{\Zset}{\field{Z}}
 \mode<presentation>
@@ -27,21 +28,29 @@
 %  Take attention for the parts you may change. See the comment lines with: %>>>
 %---------------------------------------------------------------------------------
 
+%>>> Packages to include
+\usepackage[english]{babel}
+\usepackage{tikz}
+
 %>>> You may change the text in this part {Between brackets}:
 %>>> This is for the Title page:
-\newcommand*\titel{Presentatie Beamer} % On titelpage and in footer on every page
-\newcommand*\subkop{TU Huisstijl} % In blue color
-\newcommand*\naam{Naam presentator}
-\newcommand*\afdeling{Afdeling}
+\newcommand*\titel{Presentation Beamer} % On titelpage and in footer on every page
+\newcommand*\subkop{TU Presentation template} % In blue color
+\newcommand*\naam{Name presentor}
+\newcommand*\afdeling{Department}
+
+%>>> If you want to have a navigation bar inside the pdf, you can uncomment the following.
+%>>> Personally I prefer to make my pdf client handle navigation
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
 %==============================================================
 %%% DO NOT CHANGE this part below %%%
 %%% Title Page (belongs to the theme)%%%
 % Necessary part for the theme:
 \title{\titel} % This title also appears in the TUDelft bar on the next pages
-\author[]{\naam}
-\institute[]{\subkop \\ TU Delft}
-\date[]{\today}
+\author{\naam}
+\institute{\subkop \\ TU Delft}
+\date{\today}
 \tikzset{textlabel/.style={color=white}}
 \beamertemplatetransparentcovereddynamicmedium
 
@@ -52,8 +61,7 @@
 \setbeamertemplate{sidebar left}  % blue square left above
 {\vfill
 \rlap{%\hskip0.1cm
-%\includegraphics[scale=0.33]{TUDelft/beamer-tudelft-bies.jpg} 
-\includegraphics[scale=0.33]{TUDelft/beamer-tudelft-bies_improved.png} 
+\includegraphics[scale=0.33]{TUDelft/beamer-tudelft-bies} 
 }
 \vskip-5pt}
 %==============================================================
@@ -87,14 +95,13 @@
 \end{frame}
 %==============================================================
 
-\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Pagina 1}}}}
+\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Page 1}}}}
 \end{frame}
 
-\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Pagina 2}}}}
+\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Page 2}}}}
 \end{frame}
 
-\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Laatste pagina}}}}
+\begin{frame}\frametitle{\textbf{\LARGE{\textrm{Last pagina}}}}
 \end{frame}
-
 
 \end{document} 
