@@ -7,5 +7,9 @@ This version forks 'Template_Beamer_TUhuisstijl_eenvoudig.tex'
 Differences between this template and the original one
 ------------------
 - Compatible with at least Miktex(on Windows) and Texlive(on Linux/Mac) LaTeX distributions.
+<<<<<<< HEAD
+=======
+- File size of (empty) presentation is 81KB. The file size of the original version is 445KB. This improves loading speed of the pdf.
+>>>>>>> 53d61565dfb9c26aaffbaa3f360eed67f22a9643
 - Smaller file size of the generated pdf. This improves loading speed and makes navigation faster for some pdf readers.
 - No control bar by default (but can be enabled)
